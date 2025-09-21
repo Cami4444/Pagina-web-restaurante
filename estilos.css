@@ -1,0 +1,185 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    border: 1px solid rgb(28, 61, 1);
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/elle-restaurantes-decoracion-bonita-instagram-raimunda-madrid-1573068471.jpg?crop=0.9333333333333333xw:1xh;center,top&resize=1200:*");
+    padding: 15px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    color: rgb(252, 252, 252);
+}
+
+body {
+    background: linear-gradient(135deg, #e0ffef 0%, #a2d5c6 50%, #077b8a 100%);
+}
+
+.error-msg {
+    color: #d32f2f;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    margin-top: 2px;
+    display: block;
+    min-height: 18px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+[class*="col-"] {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.col-2 { flex: 0 0 16.66%; }
+.col-5 { flex: 0 0 55%; }
+.col-6 { flex: 0 0 20%; }
+.col-12 { flex: 0 0 100%; }
+
+@media (max-width: 768px) {
+    .col-2, .col-5, .col-6, .col-12 {
+        flex: 0 0 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .background {
+        background-color: rgb(28, 61, 1);
+        color: white;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .item-menu {
+        width: 100%;
+        height: auto;
+    }
+    .col-6 {
+        flex: 0 0 100%;
+        order: 2;
+    }
+}
+
+@media screen and (min-width: 701px) {
+    .background {
+        background-color: rgb(95, 118, 76);
+        color: rgb(199, 183, 183);
+    }
+    .menu {
+        flex-direction: row;
+    }
+    .item-menu {
+        width: 200px;
+        height: 270px;
+    }
+    .col-6 {
+        flex: 0 0 50%;
+        order: 1;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .background {
+        background-color: rgb(28, 61, 1);
+        color: white;
+    }
+    .menu {
+        flex-direction: row;
+    }
+    .item-menu {
+        width: 250px;
+        height: 300px;
+    }
+    .col-6 {
+        flex: 0 0 33.33%;
+        order: 1;
+    }
+    
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(216, 255, 248);
+    color: rgb(0, 30, 20);
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    transform: scale(1);
+    box-sizing: border-box;
+}
+
+.menu li:hover {
+    background-color: rgb(192, 235, 199);
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item-menu {
+    width: 200px;
+    height: 270px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    background-color: #f0e6b973;
+    padding: 1px;
+    text-align: center;
+    color: rgb(2, 35, 2);
+}
+
+.item-menu:hover {
+    transform: scale(1.05);
+}
+
+.item-menu h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: rgb(0, 30, 20);
+}
+
+.item-menu p {
+    font-size: 0.9em;
+    color: rgb(0, 30, 20);
+}
+
+.postres-checkboxes label {
+  display: grid;
+  grid-template-columns: 1fr 220px auto;
+  align-items: center;
+  margin: 5px 0;
+}
+
+#brown-word { color: brown; }
+#Green-word { color: green; }
+#orange-word { color: orange; }
+#red-word { color: red; }
+#pink-word { color: pink; }
+#purple-word { color: rgb(188, 104, 188); }
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(28, 61, 1);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
